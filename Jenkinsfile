@@ -23,7 +23,7 @@ pipeline {
           stage('Stage3_Deploy') {
             steps {
                 echo 'Deploy my project'
-                deploy adapters: [tomcat8(credentialsId: 'tomcat_admin', path: '', url: 'http://3.80.80.28:8080/')], contextPath: null, war: '**/*.war'
+                deploy adapters: [tomcat8(credentialsId: 'tomcat_admin', path: '', url: 'http://54.208.105.245:8080/')], contextPath: null, war: '**/*.war'
             }
         }
         stage('Stage4_Test1') {
